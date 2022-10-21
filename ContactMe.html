@@ -5,6 +5,8 @@
         <meta name="viewport" content="width=device-width">
         <link rel="shortcut icon" type="image/x-icon" href="https://cdn.discordapp.com/avatars/517165349158912017/e9e3938db2fd357820b87ec1328ac106.webp?size=240"/>
         <link rel="stylesheet" href="General.css" type="text/css">
+        <script src="https://smtpjs.com/v3/smtp.js"></script>  
+        <script src="Form.js"></script>  
         <h1>Contact Me</h1>
         <title>Contact Me</title>
         <ul>
@@ -15,7 +17,7 @@
         </ul>
     </head>
     <body>
-        <form action="SendEmail.py" method="get" enctype="text/plain" name="EmailForm">
+        <form onsubmit="return sendEmail()" name="EmailForm">
             <h3>
                 <label for="FirstName">First Name:</label>
                 <input type="text" id="FirstName" name="FirstName" placeholder="Enter First Name" required>
@@ -33,7 +35,7 @@
                 <textarea type="text" id="Message" name="Message" rows="4" cols="50" placeholder="Enter Message..." required></textarea>
             </h3>
             <h3>
-                <input type="submit" value="Submit">
+                <input type="submit" value="Submit" onclick="sendEmail()">
             </h3>
         </form>
     </body>
