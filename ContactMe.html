@@ -17,7 +17,7 @@
         </ul>
     </head>
     <body>
-        <form onsubmit="return sendEmail()" name="EmailForm">
+        <form method="post" name="EmailForm">
             <h3>
                 <label for="FirstName">First Name:</label>
                 <input type="text" id="FirstName" name="FirstName" placeholder="Enter First Name" required>
@@ -35,7 +35,7 @@
                 <textarea type="text" id="Message" name="Message" rows="4" cols="50" placeholder="Enter Message..." required></textarea>
             </h3>
             <h3>
-                <input type="submit" value="Submit" onclick="sendEmail()">
+                <input type="submit" value="Submit" onclick="sendEmail()"/>
             </h3>
         </form>
     </body>

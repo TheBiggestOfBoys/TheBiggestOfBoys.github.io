@@ -1,11 +1,9 @@
-var data = new FormData(document.getElementById("EmailForm"));
-
-var Email = data.append("email", document.getElementById("Email").value);
-var FirstName = data.append("FirstName", document.getElementById("FirstName").value);
-var LastName = data.append("LastName", document.getElementById("LastName").value);
-var UserMessage = data.append("Message", document.getElementById("Message").value);
-
 function sendEmail() {
+    var Email = document.EmailForm.Eamil.value;
+    var FirstName = document.EmailForm.FirstName.value;
+    var LastName = document.EmailForm.LaststName.value;
+    var UserMessage = document.EmailForm.Message.value;
+
     Email.send({
         Host:       "smtp.gmail.com",
         Username:   "jake.scott.burner.email@gmail.com",
