@@ -1,42 +1,51 @@
-button{
+button {
     font-size: 24px;
     vertical-align: middle;
     background-color:gray;
 }
 
-h1{
+button:hover {
+    background-color: rgb(45, 45, 45);
+    color: white;
+}
+
+img {
+    vertical-align: middle;
+}
+
+a {
+    color: green;
+}
+
+h1 {
     font-size: 44px;
     color: white;
 }
 
-h2{
+h2 {
     color: white;
 }
 
-h3{
+h3 {
     font-size: 26px;
     color: white;
     text-align: left;
 }
 
-body{
+body {
     background-color: rgb(45, 45, 45);
 }
 
-p1{
+p1 {
     font-size: 24px;
     color: white;
 }
 
-input{
-    background-color: gray;
-    color: white;
+input {
     font-size: 26px;
 }
 
-textarea{
-    background-color: gray;
-    color: white;
+textarea {
     font-size: 26px;
 }
 
@@ -49,7 +58,7 @@ li a {
     display: block;
     color: white;
     text-align: center;
-    font-size: 20px;
+    font-size: 24px;
     padding: 16px 14px;
     text-decoration: none;
     background: gray;
