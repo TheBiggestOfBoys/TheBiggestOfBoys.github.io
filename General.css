@@ -47,30 +47,3 @@ input {
 textarea {
     font-size: 26px;
 }
-
-/*Navigation Bar*/
-li {
-    float: left;
-}
-
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    font-size: 24px;
-    padding: 16px 14px;
-    text-decoration: none;
-    background: gray;
-}
-
-li a:hover {
-    background-color:black;
-}
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    color: white;
-}
