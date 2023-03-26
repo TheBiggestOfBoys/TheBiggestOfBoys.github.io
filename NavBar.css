@@ -1,6 +1,7 @@
 /*Navigation Bar*/
 li {
     float: left;
+    list-style-type: none;
 }
 
 li a {
@@ -11,12 +12,21 @@ li a {
     padding: 16px 16px;
     text-decoration: none;
     background: gray;
+    float: left;
+    outline: white;
 }
 
 li a:hover {
     background-color:black;
-    padding: 24px 24px;
+    padding: 16px 24px;
     transition: 250ms;
+    transform: rotateX(15deg) rotateY(-15deg);
+}
+
+li a:not(:hover) {
+    transform: rotateX(0deg) rotateY(0deg);
+    background: gray;
+    transition: 500ms;    
 }
 
 ul {

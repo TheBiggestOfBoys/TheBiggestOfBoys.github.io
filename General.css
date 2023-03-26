@@ -9,6 +9,11 @@ button:hover {
     transition: 250ms;
 }
 
+button:not(:hover) {
+    background-color: gray;
+    transition: 250ms;
+}
+
 img {
     vertical-align: middle;
 }
@@ -32,8 +37,13 @@ h3 {
     text-align: left;
 }
 
+nav {
+    padding: 16px 4px;
+}
+
 body {
     background-color: rgb(45, 45, 45);
+    padding: 8px 8px;
 }
 
 p1 {
