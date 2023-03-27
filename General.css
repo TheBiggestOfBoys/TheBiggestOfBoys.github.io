@@ -1,6 +1,8 @@
 button {
     font-size: 24px;
     background-color:gray;
+    padding: 4px 8px;
+    margin: 4px 16px;
 }
 
 button:hover {
@@ -18,8 +20,18 @@ img {
     vertical-align: middle;
 }
 
-a {
+h2 a {
     color: green;
+}
+
+h2 a:hover {
+    color: rgb(75, 75, 255);
+    transition: 250ms;
+}
+
+h2 a:not(:hover) {
+    color: green;
+    transition: 250ms;
 }
 
 h1 {
@@ -30,6 +42,7 @@ h1 {
 h2 {
     color: white;
     padding: 8px 16px;
+    text-align: justify;
 }
 
 h3 {
@@ -50,12 +63,4 @@ body {
 p1 {
     font-size: 24px;
     color: white;
-}
-
-input {
-    font-size: 26px;
-}
-
-textarea {
-    font-size: 26px;
 }
