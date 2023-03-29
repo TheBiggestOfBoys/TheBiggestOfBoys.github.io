@@ -29,6 +29,11 @@ li a:not(:hover) {
     transition: 500ms;    
 }
 
+li a:active {
+    background: rgb(225, 225, 225);
+    transition: 250ms;
+}
+
 ul {
     list-style-type: none;
     margin: 0;
