@@ -1,66 +1,205 @@
-button {
-    font-size: 24px;
-    background-color:gray;
-    padding: 4px 8px;
-    margin: 4px 16px;
-}
-
-button:hover {
+/* General Styles */
+body {
     background-color: rgb(45, 45, 45);
     color: white;
-    transition: 250ms;
-}
-
-button:not(:hover) {
-    background-color: gray;
-    transition: 250ms;
-}
-
-img {
-    vertical-align: middle;
-}
-
-h2 a {
-    color: green;
-}
-
-h2 a:hover {
-    color: rgb(75, 75, 255);
-    transition: 250ms;
-}
-
-h2 a:not(:hover) {
-    color: green;
-    transition: 250ms;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 8px;
+    padding-top: 80px; /* Adjust this value to match the height of your navbar */
 }
 
 h1 {
     font-size: 44px;
     color: white;
+    margin: 0;
+    padding: 16px 0;
+    transition: color 0.3s ease-in-out;
 }
 
 h2 {
     color: white;
     padding: 8px 16px;
     text-align: justify;
+    margin: 0;
+    transition: color 0.3s ease-in-out;
+}
+
+h2 a {
+    color: green;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+h2 a:hover {
+    color: rgb(75, 75, 255);
 }
 
 h3 {
     font-size: 16px;
     color: white;
     text-align: left;
+    margin: 0;
+    padding: 8px 0;
+    transition: color 0.3s ease-in-out;
 }
 
-nav {
-    padding: 16px 4px;
+img {
+    vertical-align: middle;
 }
 
-body {
-    background-color: rgb(45, 45, 45);
-    padding: 8px 8px;
-}
-
-p1 {
+/* Button Styles */
+button {
     font-size: 24px;
+    background-color: gray;
+    padding: 8px 16px;
+    margin: 4px 16px;
+    border: none;
+    border-radius: 5px; /* Rounded corners for buttons */
     color: white;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: rgb(45, 45, 45);
+    cursor: pointer;
+}
+
+/* Navigation Bar */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background: #5d5d5d;
+    padding: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+    transition: background 0.3s ease-in-out;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin: 0 10px; /* Add horizontal spacing between items */
+    padding: 0;
+}
+
+nav li a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    font-size: 1.5em; /* Default font size */
+    text-decoration: none;
+    padding: 10px 20px; /* Added padding */
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, transform 0.3s ease-in-out; /* Smooth transition */
+    border-radius: 5px; /* Rounded corners */
+}
+
+nav li a:hover {
+    background-color: #444;
+    color: #00ff00; /* Add hover color */
+    transform: scale(1.1); /* Smooth scale transition */
+}
+
+nav li a:active {
+    background: #555;
+    color: #fff;
+}
+
+/* Add padding to the top of the body content to prevent overlap */
+body {
+    padding-top: 80px; /* Adjust this value to match the height of your navbar */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items */
+    }
+
+    nav li {
+        margin: 5px 0; /* Vertical spacing between items */
+    }
+
+    nav li a {
+        font-size: 1.2em; /* Adjusted font size for tablets */
+        padding: 12px 15px; /* Adjusted padding */
+    }
+
+    body {
+        padding-top: 120px; /* Adjust this value for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    nav li a {
+        font-size: 1.2em; /* Ensure readability on mobile devices */
+        padding: 12px 15px; /* Adjusted padding */
+    }
+
+    body {
+        padding-top: 120px; /* Adjust this value for smaller screens */
+    }
+}
+
+/* Footer */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #5d5d5d;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    z-index: 1000; /* Ensures it stays on top of other content */
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between links */
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    transition: transform 0.3s ease-in-out; /* Add transition for hover effect */
+}
+
+.footer-links img {
+    vertical-align: middle;
+    transition:  0.3s ease-in-out;
+}
+
+.footer-links a:hover img {
+    transform: scale(1.1); /* Scale up on hover */
+    transition:  0.3s ease-in-out;
+}
+
+/* Media queries for fine-tuning */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 8vw; /* Adjust font size for tablets */
+    }
+
+    h2 {
+        font-size: 6vw;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 10vw; /* Larger text for small screens */
+    }
+
+    h2 {
+        font-size: 8vw;
+    }
 }
